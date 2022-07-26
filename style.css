@@ -228,18 +228,31 @@ button:active {
 /* ===== MINOR MOBILE USABLILITY ===== */
 
 @media (max-width: 500px) {
+    @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
     body {
-        /* font-size: .1rem; */
+    font-family: 'Nunito Sans', sans-serif;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow-y: auto;
     }    
 
     header {
-        top: 0;
         font-size: 1.2rem;
         line-height: .9;
+        position: unset;
+    }
+
+    header > h1,
+    .options span {
+        font-family: 'Nunito Sans', sans-serif;
     }
 
     header > p {
         margin-top: -13px;
+        margin-bottom: 2.5rem;
     }
 
     .container {
@@ -250,6 +263,7 @@ button:active {
 
     .round-result {
         font-size: 2.6rem;
+        --webkit-stroke-fill: white;
     }
 
     .picks {
@@ -263,5 +277,10 @@ button:active {
     .options button {
         width: 28%;
         padding: .5rem;
+    }
+
+    .attribution {
+        position: unset;
+        margin-top: 2.5rem;
     }
 }
