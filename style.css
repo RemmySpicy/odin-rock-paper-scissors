@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
+
+:root {
+    --clr--main-light: rgb(182, 153, 118);
+    --clr--main-dark: rgb(51, 49, 49);
+    --clr-accent-light: #ddd;
+    --clr-accent-dark: gray;
+     
+}
+
+body {
+    height: 100vh;
+    background-image: url(back-img2.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: cursive;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* ===== HEADER START ===== */
+
+header {
+    position: absolute;
+    top: 1.2rem;
+    right: 0;
+    left: 0;
+    text-align: center;
+    font-size: 1.7rem;
+    line-height: .8;
+    color: var(--clr--main-dark);
+}
+
+header > h1 {
+    /* text-shadow: -1px 1px 2px red,
+				  1px 1px 2px green,
+				  1px -1px 0 blue,
+				  -1px -1px 0 yellow; */
+    -webkit-text-stroke: 1px var(--clr-accent-dark);
+    font-family: cursive;
+}
+
+header > p {
+    -webkit-text-stroke: .4px var(--clr--main-light);
+	/* text-shadow: -1px 1px 2px #23430C,
+				  1px 1px 2px #23430C,
+				  1px -1px 0 #23430C,
+				  -1px -1px 0 #23430C; */
+}
+
+/* ===== HEADER END ===== */
+
+
+/* ===== GAME CONTAINER START ===== */
+
+.container {
+    width: 600px;
+    background: rgb(68, 68, 68);
+    padding-block: 2rem;
+    border: 2px solid var(--clr-accent-dark);
+    border-radius: .7rem;
+    box-shadow: 0px 0px 30px rgba(139, 130, 130, .3);
+}
+
+.display {
+    display: flex;
+    height: 160px;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.2rem; 
+    text-align: center;
+    color: var(--clr-accent-light);
+}
+
+.display > div {
+    width: 33.33%;
+}
+
+.display p {
+    margin-bottom: 2px;
+    font-size: 1rem;
+}
+
+i {
+    font-size: 60px;
+    transition: all 180ms ease-in-out;
+}
+
+.score {
+    font-size: 4rem;
+    margin-top: -8px;
+    margin-bottom: -40px;
+}
+
+.picks {
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+.round-result {
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    color: var(--clr--main-dark);
+    text-align: center;
+    -webkit-text-stroke: 1px var(--clr--main-light);
+	text-shadow: 1px 4px 4px var(--clr--main-dark);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 0.2em;
+    transform: scale(1);
+    transition: transform 100ms ease-in-out;
+}
+
+button {
+    background-color: var(--clr-accent-dark);
+    color: var(--clr-accent-light);
+    font-size: 1.5rem;
+    border: 2px solid var(--clr-accent-light);
+    border-radius: .7rem;
+    padding: .5rem 1rem;
+    /* box-shadow: 0 0 15px 3px rgba(210, 210, 210, 0.3); */
+    /* box-shadow: 0 0 20px 4px rgba(22, 22, 22, .6); */
+    box-shadow: 0 0 20px 4px var(--clr--main-dark);
+    cursor: pointer;
+    transition: all 100ms ease-in-out
+}
+
+button:hover {
+    background-color: var(--clr-accent-light);
+    border: 2px solid var(--clr--main-light);
+    outline: 2px solid var(--clr--main-light);
+    transform: scale(1.1);
+    color: var(--clr--main-dark);
+}
+
+button:hover > i {
+    transform: rotate(90deg);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.options button {
+    width: 20%;
+    /* padding: 1px; */
+}
+
+.options span {
+    font-family: cursive;
+    font-size: .7rem;
+    display: block;
+    margin-top: 2px;
+}
+
+/* ====== GAME CONTAINER END ===== */
+
+
+/* ===== GAME RESULT POP-UP START ===== */
+
+.game-end {
+    position: absolute;
+    height: 100vh;
+    width: 100vmax;
+    /* background-color: rgb(0 0 0 / .4); */
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 150ms ease-out,
+                opacity 100ms ease-out;
+}
+
+.game-end .container {
+    text-align: center;
+    height: 360px;
+    width: 360px;
+    border-radius: .7rem;
+    background: url(back-img.jpg);
+    color: var(--clr--main-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+.reaction {
+    transform: scale(5);
+    /* height: 100%; */
+    padding-bottom: .5rem;
+}
+
+.game-result {
+    font-size: 2rem;
+}
+
+/* ===== GAME RESULT POP UP END ===== */
