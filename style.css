@@ -211,4 +211,57 @@ button:active {
     font-size: 2rem;
 }
 
+.attribution {
+    position: absolute;
+    bottom: 8px;
+    text-align: center;
+    color: var(--clr-accent-light);
+}
+
+.attribution a {
+    color: var(--clr--main-light);
+}
+
 /* ===== GAME RESULT POP UP END ===== */
+
+
+/* ===== MINOR MOBILE USABLILITY ===== */
+
+@media (max-width: 500px) {
+    body {
+        /* font-size: .1rem; */
+    }    
+
+    header {
+        top: 0;
+        font-size: 1.2rem;
+        line-height: .9;
+    }
+
+    header > p {
+        margin-top: -13px;
+    }
+
+    .container {
+        max-width: 95vw;
+        /* margin-top: 5rem; */
+        padding-top: 10px;
+    }
+
+    .round-result {
+        font-size: 2.6rem;
+    }
+
+    .picks {
+        font-size: 1.15rem;
+    }
+
+    .score {
+        font-size: 2.6rem;
+    }
+
+    .options button {
+        width: 28%;
+        padding: .5rem;
+    }
+}
