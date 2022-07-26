@@ -272,6 +272,7 @@ button:active {
 
     .score {
         font-size: 2.6rem;
+        margin-top: 0;
     }
 
     .options button {
