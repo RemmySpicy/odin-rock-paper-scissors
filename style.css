@@ -10,15 +10,19 @@
 }
 
 body {
-    height: 100vh;
     background-image: url(back-img2.jpg);
     background-size: cover;
     font-family: sans-serif;
+   
+    overflow: hidden;
+    font-family: cursive;
+}
+
+.main {
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    font-family: cursive;
 }
 
 * {
@@ -232,12 +236,14 @@ button:active {
 
     body {
     font-family: 'Nunito Sans', sans-serif;
-    height: 95vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     overflow-y: auto;
     }    
+
+    .main {
+    max-height: 95vh;
+    flex-direction: column;
+    justify-content: space-around;
+    }
 
     header {
         font-size: 1.2rem;
@@ -257,13 +263,13 @@ button:active {
 
     .container {
         max-width: 95vw;
-        /* margin-top: 5rem; */
         padding-top: 10px;
     }
 
     .round-result {
         font-size: 2.6rem;
-        --webkit-stroke-fill: white;
+        letter-spacing: 3px;
+        /* --webkit-stroke-fill: white; */
     }
 
     .picks {

@@ -9,73 +9,75 @@
     <title>Rock paper Scissors</title>
 </head>
 <body>
-    <header>
-        <h1>ROCK, PAPER, SCISSORS GAME</h1>
-        <p>First to 5 wins... good luck to you.</p>
-    </header>
+    <div class="main">
+        <header>
+            <h1>ROCK, PAPER, SCISSORS GAME</h1>
+            <p>First to 5 wins... good luck to you.</p>
+        </header>
 
-    <!-- GAME CONTAINER -->
-    <div class="container">
-        <div class="display">
-            <div>
-                <i class="fa-solid fa-user"></i>
-                <p>Your pick:</p>
-                <span class="player-round-choice picks"><b>. . .</b></span>
-            </div>
-            <div>
-                <!-- <div class="versus">versus</div> -->
-                <span>Score:</span>
-                <div class="score">
-                    <span class="player-score">0</span>
-                    <span>:</span>
-                    <span class="comp-score">0</span>
+        <!-- GAME CONTAINER -->
+        <div class="container">
+            <div class="display">
+                <div>
+                    <i class="fa-solid fa-user"></i>
+                    <p>Your pick:</p>
+                    <span class="player-round-choice picks"><b>. . .</b></span>
+                </div>
+                <div>
+                    <!-- <div class="versus">versus</div> -->
+                    <span>Score:</span>
+                    <div class="score">
+                        <span class="player-score">0</span>
+                        <span>:</span>
+                        <span class="comp-score">0</span>
+                    </div>
+                </div>
+                <!-- <img src="vs.jpg" alt="VS"> -->
+                <div class="computer">
+                    <i class="fa-solid fa-robot"></i>
+                    <p>Bot pick: </p>
+                    <span class="comp-round-choice picks"><b>. . .</b></span>
                 </div>
             </div>
-            <!-- <img src="vs.jpg" alt="VS"> -->
-            <div class="computer">
-                <i class="fa-solid fa-robot"></i>
-                <p>Bot pick: </p>
-                <span class="comp-round-choice picks"><b>. . .</b></span>
+
+            <p class="round-result">Select your move below to begin!</p>
+
+            <div class="options">
+                <button class="rock option" data-value="rock">
+                    <i class="fa-solid fa-hand-back-fist"></i>
+                    <span>ROCK</span>
+                </button>
+                <button class="paper option">
+                    <i class="fa-solid fa-hand"></i>
+                    <span>PAPER</span>
+                </button>
+                <button class="scissors option">
+                    <i class="fa-solid fa-hand-scissors"></i>
+                    <span>SCISSORS</span>
+                </button>
             </div>
         </div>
+        <!-- GAME CONTAINER END -->
 
-        <p class="round-result">Select your move below to begin!</p>
-
-        <div class="options">
-            <button class="rock option" data-value="rock">
-                <i class="fa-solid fa-hand-back-fist"></i>
-                <span>ROCK</span>
-            </button>
-            <button class="paper option">
-                <i class="fa-solid fa-hand"></i>
-                <span>PAPER</span>
-            </button>
-            <button class="scissors option">
-                <i class="fa-solid fa-hand-scissors"></i>
-                <span>SCISSORS</span>
-            </button>
-        </div>
-    </div>
-    <!-- GAME CONTAINER END -->
-
-    <!-- GAME END POP-UP -->
-    <div class="game-end">
-        <div class="container">
-            <div>
-                <div class="reaction"></div>
-                <h3 class="game-result">You won the Game</h3>
-                <button class="reset-btn">Play Again</button>
+        <!-- GAME END POP-UP -->
+        <div class="game-end">
+            <div class="container">
+                <div>
+                    <div class="reaction"></div>
+                    <h3 class="game-result">You won the Game</h3>
+                    <button class="reset-btn">Play Again</button>
+                </div>
             </div>
         </div>
+        <!-- GAME END POP-UP END -->
+        
+        <!-- ATTRIBUTION -->
+        <div class="attribution">
+            Challenge by <a href="https://theodinproject.com" target="_blank">The Odin Project</a>. 
+            Coded by <a href="https://codepen.io/RemmySpicy" target="_blank">@RemmySpicy</a>.
+        </div>
+        <!-- ATTRIBUTION END -->
     </div>
-    <!-- GAME END POP-UP END -->
-    
-    <!-- ATTRIBUTION -->
-    <div class="attribution">
-        Challenge by <a href="https://theodinproject.com" target="_blank">The Odin Project</a>. 
-        Coded by <a href="https://codepen.io/RemmySpicy" target="_blank">@RemmySpicy</a>.
-    </div>
-    <!-- ATTRIBUTION END -->
 
     <script src="index.js"></script>
 </body>
