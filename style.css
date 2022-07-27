@@ -12,8 +12,6 @@
 body {
     background-image: url(back-img2.jpg);
     background-size: cover;
-    font-family: sans-serif;
-   
     overflow: hidden;
     font-family: cursive;
 }
@@ -268,7 +266,7 @@ button:active {
 
     .round-result {
         font-size: 2.6rem;
-        letter-spacing: 3px;
+        letter-spacing: 1.8px;
         /* --webkit-stroke-fill: white; */
     }
 
